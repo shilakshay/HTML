@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="resources/index.css">
+    <link rel="stylesheet" href="resources/owl css/owl.carousel.min.css">
+    <link rel="stylesheet" href="resources/owl css/owl.theme.default.min.css">
+
+</head>
+<body>
+    <!-- navbar -->
+    <div class="container custom-navbar">
+        <div class="logo">
+
+        </div>
+        <div class="links">
+            <a href="#" id="current-page">HOME</a>
+            <a href="#">PRODUCTS</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="icons-list">
+            <div class="query">
+                <!-- <i class="fas fa-search search-button"></i> -->
+                <img src="resources/fonts/magnifying-glass.svg" class="my-auto" alt="Search Button" srcset="">
+            </div>
+            <div class="vertical-separator">&nbsp;</div>
+            <div class="buttons">
+                <a href="#" ><i class="fas fa-user"></i>&nbsp;&nbsp;Login</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Cart</a>
+            </div>
+        </div>
+        <div class="options">
+            <div class="option">
+                <i class="fas fa-bars option-button"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-container owl-carousel owl-theme">
+        <div class="item product-image">
+            <img src="resources/images/amsterdam1.jpg" style="max-height: 800px" alt="" srcset="">
+        </div>
+        <div class="item product-image">
+            <img src="resources/images/amsterdam2.jpg" style="max-height: 800px" alt="" srcset="">
+        </div>
+        <div class="item product-image">
+            <img src="resources/images/amsterdam3.jpg" style="max-height: 800px" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="container-fluid product-featured">
+        <h4>Featured <span style="color: red">Products</span></h4>
+        <div class="product-list">
+            <div class="product-item">
+
+                <div class="card product-detail">
+                    <img src="resources/images/mahalaxmi_dhoop.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dhoop Cup</h5>
+                        <h5 class="card-subtitle">INCENSE</h5>
+                        <div class="cart-options">
+                            <div class="price">
+                                <p class="product-price">	
+                                    &#8377; 150
+                                </p>
+                            </div>
+                            <div class="button">
+                                <a href="#" ><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card product-detail">
+                    <img src="resources/images/mahalaxmi_dhoop.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dhoop Cup</h5>
+                        <h5 class="card-subtitle">INCENSE</h5>
+                        <div class="cart-options">
+                            <div class="price">
+                                <p class="product-price">	
+                                    &#8377; 150
+                                </p>
+                            </div>
+                            <div class="button">
+                                <a href="#" ><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card product-detail">
+                    <img src="resources/images/mahalaxmi_dhoop.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dhoop Cup</h5>
+                        <h5 class="card-subtitle">INCENSE</h5>
+                        <div class="cart-options">
+                            <div class="price">
+                                <p class="product-price">	
+                                    &#8377; 150
+                                </p>
+                            </div>
+                            <div class="button">
+                                <a href="#" ><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card product-detail">
+                    <img src="resources/images/mahalaxmi_dhoop.jpg" alt="Mahalaxmi Dhoops" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dhoop Cup</h5>
+                        <h5 class="card-subtitle">INCENSE</h5>
+                        <div class="cart-options">
+                            <div class="price">
+                                <p class="product-price">	
+                                    &#8377; 150
+                                </p>
+                            </div>
+                            <div class="button">
+                                <a href="#" ><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more-product-page">
+            <div class="button">
+                <a href="#" class=" mx-auto">Click here to check more products</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="resources/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            items: 1,
+            autoWidth:true
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import (once,less) "fonts.less";
+@import (once,less) "carousel.less";
+
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gotham Light Regular', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+.custom-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+
+    .links{
+        a{
+            color: black;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1em;
+        }
+
+        #current-page{
+            color: skyblue;
+        }
+    }
+
+    .icons-list{
+        display: flex;
+        justify-content: flex-start;
+
+        .query{
+            display: flex;
+            flex-direction: row-reverse;
+            min-width: 150px;
+            margin-right: 0.5em;
+            
+            padding-inline-end: 1em;
+            text-align: center;
+            height: 2em;
+        
+            &:hover{
+                cursor: pointer;
+            }
+            img{
+                position: relative;
+                height: 25px;
+                width: auto;
+            }
+        }
+
+        .vertical-separator{
+            border-right: 1px solid grey;
+        }
+
+        .buttons{
+            margin: 0 1em;
+            a{
+                font-size: 1em;
+                margin: 0 0.25em;
+                padding: 0.75em 2em;
+                border-radius: 20px;
+                //font-family: 'Gotham Book','Courier New', Courier, monospace;
+                text-decoration: none;
+                //inset: 
+
+                &:nth-child(1)
+                {
+                    color: white;
+                    background: red;
+                }
+
+                &:nth-child(2){
+                    background: white;
+                    color: black;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+
+    .options{
+        .option{
+            position: relative;
+            .option-button{
+                color: rgba(0,0,0,0.8);
+                
+                &:hover{
+                    cursor: pointer;
+                    color: rgba(0,0,0,0.8);
+                }
+            }
+        }
+    }
+}
+
+.carousel-container{
+    .product-image{
+        img{
+            max-height: 800px;
+        }   
+    }
+}
+
+.product-featured{
+    margin-top: 2em;
+    padding: 5rem;
+    margin-bottom: 2em;
+    background: rgba(0,0,0,0.1);
+    h4{
+        margin-top: 1em;
+        margin-left: 3rem;
+        border-left: 5px solid red;
+        font-weight: bolder;
+        padding: 0.5em;
+        font-family: "Playfair Display";
+        letter-spacing: 0.15em;
+    }
+    .product-list{
+        margin: 5em;
+        .product-item{
+            display: flex;
+            justify-content: space-evenly;
+           
+        }
+        
+        .product-detail{
+            width: 20vw;
+            margin: 0.25em;
+            .card-subtitle{
+                color: red;
+                text-align: center;
+                font-weight: bold;
+                padding: 0.5em;
+            }
+            .card-title{
+                font-size: 1.3em;
+                text-align: center;
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.price{
+    padding-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    .product-price{
+
+    }
+    
+}
+
+.button{
+    a{
+        background:rgb(170, 107, 118);
+        color: white;
+        font-size: 1em;
+        margin: 0 0.3em;
+        padding: 0.75em 2em;
+        border-radius: 20px;
+    }
+}
+
+.cart-options{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.more-product-page{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
