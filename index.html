@@ -206,13 +206,20 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="resources/js/owl.carousel.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items:1,
             loop:true,
             margin:10,
-            items: 1,
-            autoWidth:true,
-            autoPlay:true,
-            autoplaySpeed:3000
+            autoplay:true,
+            autoplayTimeout:1000,
+            autoplayHoverPause:true
+        });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
         })
     </script>
 </body>
