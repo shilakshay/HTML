@@ -268,7 +268,7 @@ html {
 }
 .get-in-touch-banner {
   padding: 2em 0;
-  min-height: 600px;
+  min-height: 300px;
   background: linear-gradient(to right, red, pink);
   display: flex;
   justify-content: space-evenly;
