@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Vikat Incense</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+</head>
+<body>
+        <header>
+            <div id="header-container">
+                <a href="#" class="logo"><img src="images/logo.png"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+               
+                <img class="searchicon" src="images/search.png">
+
+                <div class="divider">
+                    
+                </div>
+               
+                <button class="cartbutton">
+                    <img src="images/Bag.png">
+                    Cart
+                </button>
+            </div>
+            
+    </header>
+
+
+<div class="contactbanner">
+    
+    <div class="aboutbannerwrapper">
+        <h3 class="aboutbannerheading">Contact Us</h3>
+        <p class="aboutbannerdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    
+</div>
+
+<div class="contactformback">
+   <div class="contactwrapper">
+       
+        <div class="radiobuttons">
+            <input type="radio" id="enquiryradio" checked>
+            <label for="enquiryradio">Send An Enquiry</label>
+
+            <input type="radio" id="feedbackradio">
+            <label for="feedbackradio">Give Feedback</label>
+        </div>
+        
+        <div class="formcontainer">
+        
+            <div class="contactform">
+                <div>
+                    <h5 class="contactformheading">Contact form</h5>
+                    <p class="contactdescription">Have a question? Ask us! We'll get in touch.</p>
+                </div>
+                <form action="form.php" method="get" class="form">
+                    <input type="text" name="name" id="idname" placeholder="Name">
+                    <input type="text" name="email" id="idemail" placeholder="Email">
+                    <input type="text" name="phone" id="idphone" placeholder="Phone">
+                    <textarea placeholder="Message"></textarea>
+                    <button class="contactsubmitbutton">
+                    <img src="images/send.png">
+                    Send
+                    </button>
+                </form>
+
+
+            </div>
+
+            <div class="contactside">
+                <div>
+                    <div class="iconcontainer">
+                        <img src="images/contactphone.png">
+                    </div>
+                    <h3>Call Us At</h3>
+                    <p>+917588882550</p>
+                </div>
+                <div>
+                   <div class="iconcontainer">
+                    <img src="images/contactemail.png">
+                    </div>
+                    <h3>Email Address</h3>
+                    <p>infoadmin@vikat.com</p>
+                </div>
+                <div>
+                   <div class="iconcontainer">
+                    <img src="images/contactlocation.png">
+                    </div>
+                    <h3>Address</h3>
+                    <p>Plot No 73 and 93 lava
+Khadgaon road wadi
+Nagpur - 440023</p>
+                </div>
+            </div>
+       
+       </div>
+       
+   </div>
+    
+</div>
+
+<div id="map">
+    
+</div>
+
+
+
+<div class="getintouch">
+    
+    <div class="getintouchcontainer">
+        <h3 class="getintouchheading">Get in Touch With Us!</h3>
+        <button class="contactbutton">Contact Us</button>
+    </div>
+    
+</div>
+
+<div class="footer">
+    
+    <div class="footercontainer">
+       
+       <div class="footerlinks">
+           <div class="footersection">
+               <h4>About</h4>
+               <ul>
+                   <li><a href="#">Contact Us</a></li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">info@vikat.com</a></li>
+               </ul>
+           </div>
+           <div class="footersection">
+               <h4>Policy</h4>
+               <ul>
+                   <li><a href="#">Privacy Policy</a></li>
+                   <li><a href="#">Security</a></li>
+                   <li><a href="#">Term & Condition</a></li>
+               </ul>
+           </div>
+           <div class="footersection">
+               <h4>Office</h4>
+                <p>Plot No 73 and 93 lava <br> Khadgaon road wadi <br> Nagpur - 440023</p>
+
+           </div>
+           <div class="footersection">
+               <h4>Follow Us</h4>
+               <ul>
+                   <li class="socialcircle"><a href="#"><img src="images/facebook-icon.png"></a></li>
+                   <li class="socialcircle"><a href="#"><img src="images/google-icon.png"></a></li>
+                   <li class="socialcircle"><a href="#"><img src="images/twitter-icon.png"></a></li>
+                   <li class="socialcircle"><a href="#"><img src="images/linked-icon.png"></a></li>
+                   <li class="socialcircle"><a href="#"><img src="images/instagram-icon.png"></a></li>
+               </ul>
+           </div>
+       </div>
+       <hr>
+       
+       <div class="footerlastpart">
+           
+           <div>
+               <img src="images/greylogo.png">
+           </div>
+           <div>
+               <p class="copyright">© Copyright 2019 Vikat Pvt. Ltd. All Rights Reserved.</p>
+           </div>
+           <div class="backtotop">
+               <p>Back to top</p>
+               <img src="images/backtotop.png">
+           </div>
+           
+       </div>
+        
+    </div>
+    
+</div>
+
+
+
+<script >
+	function initMap(){
+		var location ={lat:21.166  ,lng:78.980  };
+		var map = new google.maps.Map(document.getElementById("map"),{
+			zoom: 4,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+	}
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=
+AIzaSyBDScEMW6Cb72ox4LSk9lrffjY1Lc1qIik
+&&callback=initMap">
+</script> 
+
+
+</body>
+</html>
