@@ -1,5 +1,0 @@
-This is the session program,which keeps the track of products added in the "Add to Cart".
-Run the "product.php" file on your local wapserver,
-3 products will be displayed ,click on add to cart the the page will ve redicted to "Add-to-Cart.php".
-Here you can either click on "View shopping Cart>" which redirects you to "shopping-cart.php"(displays the no. of products added to the cart with there product id)
-or you can go back to the "product.php" & add more products to the cart...
